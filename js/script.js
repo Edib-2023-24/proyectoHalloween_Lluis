@@ -22,9 +22,9 @@ function cuentaAtras() {
   const segundosRestantes = Math.floor(tiempoRestante / segundos);
 
   document.getElementById("dias").innerText = diasRestantes;
-  document.getElementById("horas").innerText = horasRestantes;
-  document.getElementById("minutos").innerText = minutosRestantes;
-  document.getElementById("segundos").innerText = segundosRestantes;
+  document.getElementById("horas").innerText = ":" + horasRestantes;
+  document.getElementById("minutos").innerText = ":" + minutosRestantes;
+  document.getElementById("segundos").innerText = ":" + segundosRestantes;
 }
 
 cuentaAtras();
