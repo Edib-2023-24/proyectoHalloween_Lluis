@@ -48,27 +48,16 @@ main {
   }
 
   & .section {
-    margin-top: 10%;
+    margin-top: 8%;
     width: 100%;
 
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between; */
+    justify-content: space-between;
+  }
 
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    gap: 20px;
-
-    & .img-twtt {
-      grid-row: 1/4;
-      grid-column: 1/5;
-    }
-
-    & .img2 {
-      grid-row: 1/5;
-      grid-column: 4/7;
-    }
+  & .img3 {
+    margin: 8% 0;
   }
 }
 
