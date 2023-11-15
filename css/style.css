@@ -7,16 +7,15 @@
 /* *********************************** */
 
 body {
-  height: 100vh;
   background: var(--Bg);
 }
 
 .container {
   width: min(430px, 100%);
-  height: 100vh;
+  height: min(100vh, auto);
 
   background: url(../img/smartphone/Bg.webp) no-repeat fixed;
-  background-size: cover;
+  /* background-size: cover; */
 
   padding: 39px 46px 0 46px;
 }
@@ -38,6 +37,38 @@ header {
     -webkit-text-stroke: 2px black;
     font-weight: bold;
     line-height: 1.2;
+  }
+}
+
+main {
+  margin-top: 10%;
+
+  & .img-reloj {
+    opacity: 0.2;
+  }
+
+  & .section {
+    margin-top: 10%;
+    width: 100%;
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 20px;
+
+    & .img-twtt {
+      grid-row: 1/4;
+      grid-column: 1/5;
+    }
+
+    & .img2 {
+      grid-row: 1/5;
+      grid-column: 4/7;
+    }
   }
 }
 
